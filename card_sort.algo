@@ -1,0 +1,15 @@
+PROCEDURE card_sort
+VAR
+    x, key , y = INTEGER;
+BEGIN
+    FOR xi FROM 1 TO tab.length -1 STEP 1  DO
+        key := tab[x];
+        y = x-1;
+        
+        WHILE (y>= 0 && tab[y]>key) DO
+            tab[y+1] = tab[y]
+            y--
+        END_WHILE
+        tab[y+1] = key
+    END_FOR
+END
